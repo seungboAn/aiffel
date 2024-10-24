@@ -11,11 +11,11 @@ def main():
 
 @app.route('/getHelloworld', methods=['GET'])
 def hello_world():
-    return jsonify({"message": "Python에서 보내는 Hello World입니다."})
+    return jsonify({"message": "Python이 보내는 메시지는 World Hello입니다."})
 
 @app.route('/getGenAI', methods=['GET'])
 def gen_ai():
-    file_path = os.path.join(app.static_folder, 'ai.webp')  # static 폴더의 파일 경로
+    file_path = os.path.join(app.static_folder, 'ai.webp')
     if os.path.exists(file_path):
         return send_file(file_path, mimetype='image/webp')
     else:

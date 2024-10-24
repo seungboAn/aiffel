@@ -27,7 +27,7 @@ export default function FlaskConnector(): JSX.Element {
 
   return (
     <div>
-      <Title title={"Backend (Python)"} />
+      <Title title={"웹 서비스 Frontend(Next.js) + Backend(Python)"} />
       <div className="flex flex-col items-center justify-center gap-8 pt-8 pb-48 m-auto">
         <button 
           onClick={fetchMessage}
@@ -38,7 +38,7 @@ export default function FlaskConnector(): JSX.Element {
           {loading ? (
             <span>Loading...</span>
           ) : (
-            <p>Python 결과 가져오기</p>
+            <p>Python에 데이터 요청하기</p>
           )}
         </button>
         {message ? (
