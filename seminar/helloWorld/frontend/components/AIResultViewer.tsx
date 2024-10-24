@@ -12,8 +12,8 @@ export default function AiResultViewer() {
 
   const fetchAiResult = async () => {
     try {
-      setInputValue("");
       const response = await fetch("http://localhost:5000/getGenAI");
+      setInputValue("");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
