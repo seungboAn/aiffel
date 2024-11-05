@@ -1,14 +1,11 @@
 import random
 
 class MakeNumberBaseball(object):
-    #TODO : 클래스 변수와 인스턴스 변수의 차이점에 대해 설명하시오.
     def __init__(self): 
         self.answer = [str(random.randint(0, 9)) for _ in range(5)] 
         self.strike = 0
         self.ball = 0        
 
-    #TODO
-    # in 연산자에 대해 설명하시오.
     def attempt(self):
         self.strike = 0
         self.ball = 0  
